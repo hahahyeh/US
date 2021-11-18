@@ -30,18 +30,21 @@ router.get("/", async (req, res) => {
 });
 
 //사용자의 대답 저장
-router.post("/", async (req, res) => {
-  try {
-    await Chat.create({
-      speaker: "user",
-      user_id: req.body.id,
-      content: req.body.content,
-    });
+router.post('/', async (req, res) => {
 
-    res.status(200).send("saved successfully");
-  } catch (error) {
-    console.error(error);
-  }
-});
+    try {
+        await Chat.create({
+            user_id: req.body.id,
+            content: req.body.content,
+            question: req.body.question
+        });
+
+        res.send("saved successfully")
+
+    } catch (error) {
+      console.error(error);
+    }
+  });
+
 
 module.exports = router;
