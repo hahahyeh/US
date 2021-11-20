@@ -8,6 +8,10 @@ module.exports = class Chat extends Sequelize.Model {
         type: Sequelize.INTEGER(15),
         allowNull: false,
       },
+      nickname: {
+        type: Sequelize.STRING(15),
+        allowNull: true,
+      },
       question: {
           type: Sequelize.TEXT,
           allowNull: true,
@@ -30,7 +34,7 @@ module.exports = class Chat extends Sequelize.Model {
   }
   
   static associate(db){
-    db.Token.belongsTo(db.User, { foreignKey: 'user_id', targetKey: 'id'}); 
+    db.Chat.belongsTo(db.User, { foreignKey: 'user_id', targetKey: 'id'}); 
   } 
 
 };
