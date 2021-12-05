@@ -1,7 +1,7 @@
 ---
 applications:
-  - name: us_server
-    memory: 512M
+  - name: usus
+    memory: 2000M
     instances: 1
-    command: npm start
+    command: npm run dev
     path: ./
