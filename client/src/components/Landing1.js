@@ -7,7 +7,7 @@ function Landing1() {
   return (
     <div className="landing1">
       <div className="landing1-text">
-        <div className="landing1-title">Untack Smalltalk</div>
+        <div className="landing1-title">Untact Smalltalk</div>
         <div className="landing1-content">
           US 와 대화하고 일상을 기록한다
           <br />

@@ -31,7 +31,7 @@ function NavBar(props) {
   if (!token) {
     login = (
       <div className="nav-btn">
-        <a href="http://untacktalk.shop:8080/auth/google">
+        <a href="http://untacttalk.shop:8080/auth/google">
           <Button icon={<GoogleOutlined />}>Sign In With Google</Button>
         </a>
       </div>
