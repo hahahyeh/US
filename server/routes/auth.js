@@ -14,7 +14,7 @@ router.get(
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    failureRedirect: "http://localhost/check",
+    failureRedirect: "http://untacttalk.shop/check",
   }),
   function (req, res) {
     const token = {
@@ -23,7 +23,7 @@ router.get(
     };
 
     res.redirect(
-      `http://localhost:3000/check?accessToken=${token.accessToken}`
+      `http://untacttalk.shop/check?accessToken=${token.accessToken}`
     );
   }
 );
