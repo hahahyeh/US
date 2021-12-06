@@ -11,7 +11,7 @@ function Landing3(props) {
   if (!props.currentUser) {
     login = (
       <div className="landing3-btn">
-        <a href="http://49.50.175.14:8080/auth/google">
+        <a href="http://untacktalk.shop:8080/auth/google">
           <Button icon={<AliwangwangOutlined />}>
             구글 아이디로 US 시작하기
           </Button>
