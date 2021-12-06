@@ -10,10 +10,11 @@ function Landing2() {
         <div className="landing2-title">
           Talk With
           <span style={{ color: "#ec5863" }}> US</span>
-          <br />& Share <span style={{ color: "#9ab1f3" }}> DAYS</span>
+          <br />
+          Share <span style={{ color: "#9ab1f3" }}> DAYS</span>
         </div>
         <div className="landing2-content">
-          우리의 Untack Smalltalk, 대화를 통해 일상을 기록하고 공유하다
+          우리의 Untact Smalltalk, 대화를 통해 일상을 기록하고 공유하다
           <br />
           <br />
           <span>사소한 일상에 소중함을 느끼고 기록으로 남기고 싶은,</span>
